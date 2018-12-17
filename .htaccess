@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ index.php?/$1 [L]
+RewriteRule ^warga/(.*)$ controllers/pages/warga/index.php?page=$1
+RewriteRule ^kurir/(.*)$ controllers/pages/kurir/index.php?page=$1
+RewriteRule ^adminweb/(.*)$ admin/controllers/pages/index.php?page=$1
+RewriteRule ^adminweb/(.*)$ admin/controllers/config/index.php?page=$1
+RewriteRule ^daftar controllers/pages/daftar.php

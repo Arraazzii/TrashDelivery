@@ -1,0 +1,12 @@
+<?php 
+	session_start();
+	unset($_SESSION['nik']);
+	unset($_SESSION['ayah']);
+	unset($_SESSION['kd_alamat']);
+	unset($_SESSION['telepon']);
+	unset($_SESSION['level']);
+	unset($_SESSION['nama']);
+	unset($_SESSION['username']);
+	unset($_SESSION['kode_kurir']);
+	header('location:../../?logout=berhasil');
+?>
